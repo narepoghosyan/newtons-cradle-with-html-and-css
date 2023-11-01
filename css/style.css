@@ -1,0 +1,127 @@
+* {
+	margin: 0 auto;
+}
+
+.container {
+	width: 615px;
+	height: 300px;
+	border: 10px solid #536474;
+	margin-top: 70px;
+	position: relative;
+}
+
+.top {
+	position: absolute;
+	width: 615px;
+	height: 40px;
+	background-color: #536474;
+}
+
+.first {
+	height: 240px;
+	width: 2px;
+	background-color: #536474;
+	float: left;
+	position: relative;
+	left: 150px;
+	transform: rotate(45deg);
+	animation-name: first;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	
+
+}
+
+.middle1 {
+	height: 240px;
+	width: 2px;
+	background-color: #536474;
+	float: left;
+	position: relative;
+	left: 280px;
+}
+
+.middle2 {
+	height: 240px;
+	width: 2px;
+	background-color: #536474;
+	float: left;
+	position: relative;
+	left: 330px;
+}
+
+.last {
+	height: 240px;
+	width: 2px;
+	background-color: #536474;
+	float: left;
+	position: relative;
+	left: 300px;
+	transform: rotate(-45deg);
+	animation-name: last;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
+.sharik {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	background-color: yellow;
+	top: 240px;
+	right: 25px;
+	border-radius: 50%;
+	background-image: radial-gradient(#B5DCEF, #536474, #202930)
+}
+
+@keyframes first {
+	0% {
+		left: 150px;
+		transform: rotate(45deg);
+	}
+	25% {
+		transform: rotate(0deg);
+		left: 230px;
+	}
+	50% {
+		transform: rotate(0deg);
+		left: 230px;
+	}
+
+	75% {
+		transform: rotate(0deg);
+		left: 230px;
+	}
+
+	100%{
+		transform: rotate(45deg);
+		left: 150px;
+	}
+
+}
+
+@keyframes last {
+	0% {
+		transform: rotate(0deg);
+		left: 380px;
+	}
+
+	25% {
+		transform: rotate(0deg);
+		left: 380px; 
+			
+	}
+	50% {
+		left: 460px;
+		transform: rotate(-45deg);
+	}
+	
+	75% {
+		transform: rotate(0deg);
+		left: 380px;
+	}
+	100% {
+		transform: rotate(0deg);
+		left: 380px;
+	}
+}
